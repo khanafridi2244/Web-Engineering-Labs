@@ -14,5 +14,3 @@ This project is a university task involving **HTML, CSS, JavaScript, and PHP** t
 - JavaScript for dynamic UI interactions.
 - PHP for backend functionality.
 - Basic form handling and database connectivity (if required).
-
-## 📂 Project Structure
