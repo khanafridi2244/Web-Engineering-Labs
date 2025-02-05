@@ -1,0 +1,1 @@
+document.write("i m writing the js code form the external of html");

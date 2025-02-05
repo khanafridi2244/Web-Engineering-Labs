@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum</title>
+</head>
+<body>
+    <h1>Calculate Sum of Numbers</h1>
+    
+    <label for="numbers">Enter numbers separated by commas:</label>
+    <input type="text" id="numbers">
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <script>
+        // Define a function using rest syntax to accept any number of arguments
+        function calculateSum() {
+            // Get the input value
+            var input = document.getElementById('numbers').value;
+            
+            // Split the input string into an array of numbers
+            var numbersArray = input.split(',').map(Number);
+            
+            // Calculate the sum of numbers using rest syntax
+            var sum = calculateSumOfNumbers(...numbersArray);
+            
+            // Display the sum in the console
+            console.log('Sum of all numbers:', sum);
+        }
+
+        // Define a function using rest syntax to calculate the sum of numbers
+        function calculateSumOfNumbers(...args) {
+            // Use reduce to calculate the sum of numbers
+            return args.reduce((total, num) => total + num, 0);
+        }
+    </script>
+</body>
+</html>

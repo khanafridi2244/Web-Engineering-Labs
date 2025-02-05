@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Sheet</title>
+    <link rel="stylesheet" href="task6.style.css"> <!-- Link to external CSS file -->
+    <script src="06script.js"></script> <!-- Link to external JavaScript file -->
+</head>
+<body>
+    <h2>STUDENT GRADE SHEET</h2>
+
+    <!-- Student grade form -->
+    <div class="RegForm">
+        <form id="gradeForm">
+           
+            <div class="form-group">
+                <label for="regNo">Registration Number:</label>
+                <input type="text" id="regNo" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" required>
+            </div>
+
+            <div class="form-group1">
+                <label>Subject Marks:</label>
+            </div>
+
+            <div class="form-group">
+                <label for="web">Web Engineering:</label>
+                <input type="number" id="web" required>
+            </div>
+
+            <div class="form-group">
+                <label for="programming">Computer Programming:</label>
+                <input type="number" id="programming" required>
+            </div>
+
+            <div class="form-group">
+                <label for="oop">Object Oriented Programming:</label>
+                <input type="number" id="oop" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ds">Data Structures and Algorithms:</label>
+                <input type="number" id="ds" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ai">Artificial Intelligence:</label>
+                <input type="number" id="ai" required>
+            </div>
+
+            <div class="form-group2">
+                <button type="button" onclick="calculateGrade()">Calculate</button>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <!-- Table to display grade sheet -->
+    <table id="gradeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Registration Number</th>
+                <th>Semester</th>
+                <th>Web Engineering</th>
+                <th>Computer Programming</th>
+                <th>Object Oriented Programming</th>
+                <th>Data Structures and Algorithms</th>
+                <th>Artificial Intelligence</th>
+                <th>Obtained Marks</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="gradeBody"></tbody>
+    </table>
+</body>
+</html>

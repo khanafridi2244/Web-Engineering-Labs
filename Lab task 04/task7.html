@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    
+    .calculator-form {
+        width: 300px;
+        border: 2px solid #ccc;
+        padding: 20px;
+        margin: 50px auto;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .input-row {
+        margin-bottom: 10px;
+        overflow: hidden;
+        
+    }
+
+    .input-field {
+        float: left;
+        width: 100px;
+        font-weight: bold;
+       
+    }
+
+    .input-value {
+        float: left;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+  
+<script src="task7.script.js"></script>
+<div class="calculator-form">
+    <div class="input-row">
+        <div class="input-field">OPEREND_1: </div>
+        <div class="input-value" id="operand1"></div>
+    </div>
+    <div class="input-row">
+        <div class="input-field">OPERATOR: </div>
+        <div class="input-value" id="operator"></div>
+    </div>
+    <div class="input-row">
+        <div class="input-field">OPEREND_2: </div>
+        <div class="input-value" id="operand2"></div>
+    </div>
+    <div class="input-row">
+        <div class="input-field">RESULT: </div>
+        <div class="input-value" id="result"></div>
+    </div>
+</div>
+
+<script>
+    // Prompt user for input
+    var operand1 = parseFloat(prompt("ENTER THE FIRST OPEREND:"));
+    var operator = prompt("ENTER OPERATOR (+, -, *, /):");
+    var operand2 = parseFloat(prompt("ENTER THE SECOND OPERATOR:"));
+
+    // Map operators to functions
+    var operations = {
+        '+': add,
+        '-': subtract,
+        '*': multiply,
+        '/': divide
+    };
+
+    // Check if the operator is valid
+    var result;
+    if (operations[operator]) {
+        // Call the corresponding function based on the operator
+        result = operations[operator](operand1, operand2);
+    } else {
+        result = "INVALID OPERATOR";
+    }
+
+    // Display the result and input numbers on the page
+    document.getElementById("operand1").innerHTML = operand1;
+    document.getElementById("operator").innerHTML = operator;
+    document.getElementById("operand2").innerHTML = operand2;
+    document.getElementById("result").innerHTML = result;
+</script>
+
+</body>
+</html>

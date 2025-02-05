@@ -1,0 +1,36 @@
+*{
+    align-items: center;
+}
+.header{
+    border: 1px solid;
+    height: 100px;
+}
+
+.footer{
+    border: 1px solid;
+    height: 50px;
+    margin-top: 2px;
+}
+.main{
+    border: 1px solid;
+    height: 600px;
+    margin-top: 2px;
+}
+.item01{
+    border: 1px solid;
+    width: 30%;
+    height: 598px;
+}
+.item02{
+    background-color: ;
+}
+
+/*
+.container{
+    border:solid black;
+    height: 600px;
+    margin-top: 2px;
+}
+
+.item02{
+}*/

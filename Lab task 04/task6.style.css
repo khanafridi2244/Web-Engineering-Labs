@@ -1,0 +1,63 @@
+
+body {
+    background-color: rgb(21, 29, 24);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid rgb(178, 241, 29);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+.RegForm .form-group {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid rgb(34, 184, 21);
+    margin: 8px;
+}
+
+.RegForm .form-group input {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(56, 54, 54, 0.5);
+}
+
+.RegForm .form-group1 {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2:hover {
+    background-color: rgba(6, 7, 8, 0.086);
+    color: rgb(212, 25, 25);
+    box-shadow: 0 0 10px rgba(226, 209, 209, 0.5); /* Add a shadow effect */
+}
+
+.RegForm .form-group2 button {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.RegForm .form-group2 button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    background-color: darkgrey;
+    font-size: 23px;
+    border-radius: 5px;
+}
